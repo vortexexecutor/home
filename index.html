@@ -3,7 +3,7 @@
     
     <style>
       body {
-      height: 100vh;
+      background-size: cover;
       background: linear-gradient(to bottom, rgb(10, 14, 29), rgb(43, 61, 126));
       text-align: center;
       }
@@ -20,24 +20,43 @@
       transition: background-color 0.2s ease;
       }
       
+      .key-system-button {
+      background-color: rgb(85, 122, 255);
+      border: none;
+      border-radius: 12px;
+      color: rgb(10, 14, 29);
+      height: 60px;
+      width: 300px;
+      font-size: 24px;
+      cursor: pointer;
+      transition: 0.3s ease;
+      }
+      
       .download-button:hover {
+      background-color: rgb(255, 255, 255);
+      }
+      
+      .key-system-button:hover {
       background-color: rgb(255, 255, 255);
       }
       
     </style>
     
     <h1 style='font-size: 72px; font-family: "Arial"; color: rgb(85, 122, 255);'>Vortex Executor</h1>
-    <button style='position: fixed; right: 10px; top: 10px; border: none; border-radius: 12px; height: 40px; width: 80px; background-color: rgb(85, 122, 255); color: rgb(10, 14, 29); font-size: 16px; cursor: pointer;'><strong>Get Key</strong></button>
     <p style='font-size: 30px; font-family: "Arial"; color: rgb(255, 255, 255);'>Enhance your execution experience with the additional features we have provided</p><br>
     
-    <h2 style='font-size: 40px; font-family: "Arial"; color: rgb(255, 255, 255)'>Downloads:</h2>
+    <h2 style='font-size: 40px; font-family: "Arial"; color: rgb(255, 255, 255)'>Downloads</h2>
     
     <button class='download-button' style='transform: translate(-10px);' onclick='alert("coming soon...")'><strong>Android</strong></button>
     <button class='download-button' onclick='alert("coming soon...")'><strong>iOS</strong></button>
     <button class='download-button' style='transform: translate(10px);' onclick='alert("coming soon...")'><strong>Windows</strong></button><br><br>
     
-    <p style='font-size: 20px; font-family: "Arial"; color: rgb(255, 255, 255)'>Want to get notified when vortex releases?
-      <a href='https://discord.com/invite/CmSV3M9Sbg' style="color: rgb(85,122,255)">Join our discord server!</a></p>
+    <p style='font-size: 20px; font-family: "Arial"; color: rgb(255, 255, 255)'>Want to recieve updates and leaks?
+      <a href='https://discord.com/invite/CmSV3M9Sbg' style="color: rgb(85,122,255)">Join our discord server!</a></p><br>
     
+    <h2 style='font-size: 40px; font-family: "Arial"; color: rgb(255, 255, 255)'>Key System</h2>
+    
+    <button class='key-system-button'><strong>Complete Gateway</strong></button><br>
+    <button class='key-system-button' style='transform: translate(0, 12px);'><strong>Log In</strong></button>
   </body>
 </html>
