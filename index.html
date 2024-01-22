@@ -1,44 +1,50 @@
 <html>
-  <body>
-    
-    <style>
-      body {
-      background-size: cover;
-      background: linear-gradient(to bottom, rgb(10, 14, 29), rgb(43, 61, 126));
-      text-align: center;
-      }
-      
-      .download-button {
-      background-color: rgb(85, 122, 255);
-      border: none;
-      border-radius: 20px;
-      color: rgb(10, 14, 29);
-      height: 80px;
-      width: 170px;
-      font-size: 28px;
-      cursor: pointer;
-      transition: background-color 0.2s ease;
-      }
-      
-      .download-button:hover {
-      background-color: rgb(255, 255, 255);
-      }
-      
+  <head>
+     <style>
+       body {
+       background: linear-gradient(to bottom, rgb(10, 14, 29), rgb(43, 61, 126));
+       margin: 0;
+       height: 100vh;
+       font-family: Arial, sans-serif;
+       text-align: center;
+       color: rgb(255, 255, 255)
+       }
+       
+       .topbar {
+       background-color: rgb(57, 82, 166);
+       height: 60px;
+       width: 100%;
+       }
+       
+       .menu-button {
+       width: 60px;
+       height: 60px;
+       text-align: left;
+       font-size: 40px;
+       position: absolute;
+       left: 10px;
+       cursor: pointer;
+       }
+       
+       .download-button {
+       border: none;
+       border-radius: 20px;
+       width: 200px;
+       height: 70px
+       }
     </style>
+  </head>
+  
+  <body>
+    <div class="topbar">
+      <div class="menu-button">&#9776</div>
+    </div>
     
-    <a href='https://vortexexecutor.github.io/login/' style='position: absolute; right: 10px; top: 10px; font-family: "Arial"; color: rgb(255, 255, 255);'><strong>Log In</strong></a><br>
-    <h1 style='font-size: 72px; font-family: "Arial"; color: rgb(85, 122, 255);'>Vortex Executor</h1>
-    <p style='font-size: 30px; font-family: "Arial"; color: rgb(255, 255, 255);'>Enhance your execution experience with the additional features we have provided</p><br>
-    
-    <h2 style='font-size: 40px; font-family: "Arial"; color: rgb(255, 255, 255)'>Downloads</h2>
-    
-    <button class='download-button' style='transform: translate(-10px);' onclick='alert("coming soon...")'><strong>Android</strong></button>
-    <button class='download-button' onclick='alert("coming soon...")'><strong>iOS</strong></button>
-    <button class='download-button' style='transform: translate(10px);' onclick='alert("coming soon...")'><strong>Windows</strong></button><br><br>
-    
-    <p style='font-size: 20px; font-family: "Arial"; color: rgb(255, 255, 255)'>Want to recieve updates and leaks?
-      <a href='https://discord.com/invite/CmSV3M9Sbg' style="color: rgb(85,122,255)">Join our discord server!</a></p><br>
-
-    
+    <h1 style="color: rgb(85, 122, 255); font-size: 72px;">Vortex Executor</h1>
+    <p style="font-size: 25px;">a better execution experience.</p><br><br>
+    <h2 style="font-size: 30px;">Downloads</h2>
+    <button class="download-button" style="transform: translate(-7px)">iOS</button>
+    <button class="download-button">Android</button>
+    <button class="download-button" style="transform: translate(7px)">Windows</button>
   </body>
 </html>
