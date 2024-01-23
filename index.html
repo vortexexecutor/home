@@ -11,7 +11,7 @@
        }
        
        .menu {
-       background-color: rgb(57, 82, 166);
+       background: linear-gradient(to bottom, rgb(59, 86, 168), rgb(50, 73, 141));
        height: 100%;
        width: 220px;
        position: fixed;
@@ -20,7 +20,7 @@
        }
        
        .topbar {
-       background-color: rgb(85, 122, 255);
+       background: linear-gradient(to bottom, rgb(85, 122, 255), rgb(71, 103, 202));
        height: 60px;
        width: 100%;
        position: fixed;
@@ -40,10 +40,16 @@
        
        .download-button {
        border: none;
-       border-radius: 20px;
+       border-radius: 26px;
        width: 200px;
-       height: 70px;
-       background-color: rgb(85, 122, 255);
+       height: 90px;
+              background: linear-gradient(to bottom, rgb(85, 122, 255), rgb(71, 103, 202));
+       color: rgb(10, 14, 29);
+       font-size: 32px;
+       }
+       
+       .download-button:hover {
+       border: 3px solid white;
        }
     </style>
   </head>
@@ -58,7 +64,7 @@
     
     <br><br><h1 style="color: rgb(85, 122, 255); font-size: 72px;">Vortex Executor</h1>
     <p style="font-size: 25px;">a better execution experience.</p><br><br>
-    <h2 style="font-size: 40px;">Downloads</h2>
+    <h2 style="font-size: 38px;">Downloads</h2>
     <button class="download-button" style="transform: translate(-7px)"><strong>iOS</strong></button>
     <button class="download-button"><strong>Android</strong></button>
     <button class="download-button" style="transform: translate(7px)"><strong>Windows</strong></button>
