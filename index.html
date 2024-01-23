@@ -10,10 +10,21 @@
        color: rgb(255, 255, 255)
        }
        
-       .topbar {
+       .menu {
        background-color: rgb(57, 82, 166);
+       height: 100%;
+       width: 220px;
+       position: fixed;
+       top: 0;
+       display: none;
+       }
+       
+       .topbar {
+       background-color: rgb(85, 122, 255);
        height: 60px;
        width: 100%;
+       position: fixed;
+       top: 0;
        }
        
        .menu-button {
@@ -24,27 +35,38 @@
        position: absolute;
        left: 10px;
        cursor: pointer;
+       color: rgb(10, 14, 29);
        }
        
        .download-button {
        border: none;
        border-radius: 20px;
        width: 200px;
-       height: 70px
+       height: 70px;
+       background-color: rgb(85, 122, 255);
        }
     </style>
   </head>
   
   <body>
-    <div class="topbar">
-      <div class="menu-button">&#9776</div>
-    </div>
+    <script>
+  function toggleMenu() {
+    var menu = document.getElementById("menu");
+    menu.style.display = menu.style.display === "block" ? "none" : "block";
+  }
+</script>
     
-    <h1 style="color: rgb(85, 122, 255); font-size: 72px;">Vortex Executor</h1>
+    <br><br><h1 style="color: rgb(85, 122, 255); font-size: 72px;">Vortex Executor</h1>
     <p style="font-size: 25px;">a better execution experience.</p><br><br>
     <h2 style="font-size: 40px;">Downloads</h2>
-    <button class="download-button" style="transform: translate(-7px)">iOS</button>
-    <button class="download-button">Android</button>
-    <button class="download-button" style="transform: translate(7px)">Windows</button>
+    <button class="download-button" style="transform: translate(-7px)"><strong>iOS</strong></button>
+    <button class="download-button"><strong>Android</strong></button>
+    <button class="download-button" style="transform: translate(7px)"><strong>Windows</strong></button>
+      
+    <div class="menu" id="menu"></div>
+    
+    <div class="topbar">
+      <div class="menu-button" onclick="toggleMenu()"><strong>&#9776</strong></div>
+    </div>
   </body>
 </html>
