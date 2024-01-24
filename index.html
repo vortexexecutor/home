@@ -11,7 +11,7 @@
        }
        
        .menu {
-       background: linear-gradient(to bottom, rgb(59, 86, 168), rgb(50, 73, 141));
+       background-color: rgb(27, 27, 27);
        height: 100%;
        width: 220px;
        position: fixed;
@@ -20,7 +20,7 @@
        }
        
        .topbar {
-       background: linear-gradient(to bottom, rgb(85, 122, 255), rgb(71, 103, 202));
+       background-color: rgb(36, 36, 36);
        height: 60px;
        width: 100%;
        position: fixed;
@@ -35,7 +35,12 @@
        position: absolute;
        left: 10px;
        cursor: pointer;
-       color: rgb(10, 14, 29);
+       color: rgb(255, 255, 255);
+       }
+       
+       .title {
+       font-size: 72px;
+       color: rgb(85, 122, 255);
        }
        
        .download-button {
@@ -47,6 +52,7 @@
        color: rgb(10, 14, 29);
        font-size: 32px;
        cursor: pointer;
+       transition: color 0.2s ease;
        }
        
        @media (hover: hover) and (pointer: fine) {
@@ -66,7 +72,7 @@
   }
 </script>
     
-    <br><br><h1 style="color: rgb(85, 122, 255); font-size: 72px;">Vortex Executor</h1>
+    <br><br><h1 class="title">Vortex Executor</h1>
     <p style="font-size: 25px;">a better execution experience.</p><br><br>
     <h2 style="font-size: 38px;">Downloads</h2>
     <button class="download-button" style="transform: translate(-7px)"><strong>iOS</strong></button>
@@ -76,7 +82,7 @@
     <div class="menu" id="menu"></div>
     
     <div class="topbar">
-      <div class="menu-button" onclick="toggleMenu()"><strong>&#9776</strong></div>
+      <div class="menu-button" onclick="toggleMenu()">&#9776</div>
     </div>
   </body>
 </html>
