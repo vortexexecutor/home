@@ -27,6 +27,12 @@
         cursor: pointer;
       }
       
+      @media (max-width: 411) {
+        #menu-toggle {
+          font-size: 60px;
+        }
+      }
+      
       #menu {
         background-color: rgb(27, 27, 27);
         position: fixed;
@@ -46,9 +52,11 @@
         text-align: center;
       }
       
-      .menu-button:hover {
-        color: rgb(85, 122, 255);
-        text-decoration: underline;
+      @media (pointer: fine) {
+        .menu-button:hover {
+          color: rgb(85, 122, 255);
+          text-decoration: underline;
+        }
       }
       
       .download-button {
@@ -62,9 +70,11 @@
         cursor: pointer;
       }
       
-      .download-button:hover {
-        border: 2px solid white;
-        color: white;
+      @media (pointer: fine) {
+        .download-button:hover {
+          border: 2px solid white;
+          color: white;
+        }
       }
       
       .content {
