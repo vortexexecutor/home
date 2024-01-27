@@ -27,13 +27,6 @@
         cursor: pointer;
       }
       
-      @media only screen and (max-device-width: 600px) {
-        #menu-toggle {
-          font-size: 70px;
-          padding: 20px;
-        }
-      }
-      
       #menu {
         background-color: rgb(27, 27, 27);
         position: fixed;
@@ -42,6 +35,19 @@
         left: -180px;
         top: 0;
         transition: left 0.4s ease;
+      }
+      
+      @media only screen and (max-device-width: 600px) {
+        #menu-toggle {
+          font-size: 70px;
+          padding: 20px;
+        }
+        
+        #menu {
+          top: -100%;
+          left: 0;
+          width: 100%;
+        }
       }
       
       .menu-button {
