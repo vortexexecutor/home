@@ -33,7 +33,7 @@
         height: 100%;
         width: 180px;
         left: -180px;
-        top: 0;
+        top: 0px;
         transition: left 0.4s ease;
       }
       
@@ -90,16 +90,15 @@
         padding-top: 40px;
       }
       
-      @media only screen and (max-device-width: 600px) {
+      @media only screen and (max-device-width: 6000px) {
         #menu-toggle {
           font-size: 70px;
           padding: 20px;
         }
         
         #menu {
-          top: -100%;
-          left: 0;
           width: 100%;
+          left: -100%;
         }
         
         h1 {
@@ -148,7 +147,7 @@
       function toggleMenu() {
         var menu = document.getElementById("menu");
         var left = menu.style.left;
-        menu.style.left = left === "0px" ? "-180px" : "0px";
+        menu.style.left = left === "0px" ? menu.style.width : "0px";
       }
     </script>
     
