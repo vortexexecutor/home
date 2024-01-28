@@ -37,19 +37,6 @@
         transition: left 0.4s ease;
       }
       
-      @media only screen and (max-device-width: 600px) {
-        #menu-toggle {
-          font-size: 70px;
-          padding: 20px;
-        }
-        
-        #menu {
-          top: -100%;
-          left: 0;
-          width: 100%;
-        }
-      }
-      
       .menu-button {
         width: 180px;
         height: 40px;
@@ -77,6 +64,21 @@
         cursor: pointer;
       }
       
+      #title {
+        font-size: 68px;
+        color: rgb(85, 122, 255);
+      }
+      
+      #logo {
+        height: 70px;
+        width: 70px;
+      }
+      
+      #slogan {
+        font-size: 22px;
+        transform: translate(0, -30px);
+      }
+      
       @media (pointer: fine) {
         .download-button:hover {
           border: 2px solid white;
@@ -87,6 +89,57 @@
       .content {
         padding-top: 40px;
       }
+      
+      @media only screen and (max-device-width: 600px) {
+        #menu-toggle {
+          font-size: 70px;
+          padding: 20px;
+        }
+        
+        #menu {
+          top: -100%;
+          left: 0;
+          width: 100%;
+        }
+        
+        h1 {
+          font-size: 60px;
+        }
+        
+        #title {
+          font-size: 120px;
+        }
+        
+        #logo {
+          width: 200;
+          height: 200;
+        }
+        
+        #slogan {
+          font-size: 30px;
+          transform: translate(0, -30px);
+        }
+        
+        .menu-button {
+          font-size: 70;
+          width: 100%;
+          height: 90px;
+          transform: translate(0, 160px);
+        }
+        
+        .download-button {
+          width: 300px;
+          height: 100;
+          margin: 10px;
+          font-size: 50px;
+          border-radius: 30px;
+        }
+        
+        .content {
+          padding-top: 100px;
+        }
+      }
+      
     </style>
   </head>
   
@@ -100,11 +153,11 @@
     </script>
     
     <div class="content">
-      <h1 style="font-size: 68px; color: rgb(85, 122, 255);">
+      <h1 id="title">
         Vortex Executor
-        <img src="vortex.png" alt="Vortex Logo" style="height: 70px; width: 70px;">
+        <img id="logo" src="vortex.png" alt="Vortex Logo">
       </h1>
-      <p style="font-size: 22px; transform: translate(0, -30px);"><strong>the ultimate roblox experience.</strong></p>
+      <p id="slogan"><strong>the ultimate roblox experience.</strong></p>
       <h1>Downloads</h1>
       <button class="download-button"><strong>iOS</strong></button>
       <button class="download-button"><strong>Android</strong></button>
